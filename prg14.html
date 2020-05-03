@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>prg14</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("14prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>14. WAP to print sum of even and odd numbers from 1 to N numbers.</p> </h3></b>
+<hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int n,sum=0,i,sum1=0;
+	<p>printf("Enter the number.\n");
+	<p>scanf("%d",&n);
+	<p>for(i=1;i<=n;i++)
+	<p>{
+<p>	if(i%2==0)
+  <p>  sum=sum+i;
+   <p> else
+   <p> sum1=sum1+i;
+<p>	}
+	<p>printf("Sum of all even numbers upto %d is=%d\n",n,sum);
+<p>printf("Sum of all odd numbers upto %d is=%d\n",n,sum1);
+<p>return 0;
+<p>getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

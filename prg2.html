@@ -1,0 +1,51 @@
+<html>
+<head>
+<title>prg2</title>
+</head>
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("2prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>2.WAP that calculates the Simple Interest and Compound Interest. The Principal, Amount, Rate of Interest and Time are entered through the keyboard.</h3></b><hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()</p>
+<p>{</p>
+	<p>double p,a,r,si,ci,amt,d1;int t;</p>
+	<p>printf("Enter the principal value\n");</p>
+	<p>scanf("%lf",&p);</p>
+		<p>printf("Enter the rate of interest \n");</p>
+	<p>scanf("%lf",&r);</p>
+	<p>	printf("Enter the time in year\n");</p>
+	<p>scanf("%d",&t);</p>
+	<p>si=(p*r*t)/100;</p>
+	<p>d1=(1+r/100);</p>
+	<p>amt=p*(pow(d1,t));</p>
+<p>	ci=amt-p;</p>
+	<p>printf("Simple interest  is=%lf\n",si);</p>
+	<p>printf("Compound Interest is=%lf\n",ci);</p>
+	<p>return 0;</p>
+	<p>getch();</p>
+	
+}</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

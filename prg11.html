@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>prg11</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("11prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>11. WAP that takes two operands and one operator from the user and perform the operation and prints the result by using Switch statement</p> </h3></b>
+<hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int a,b;char ch;
+	<p>printf("Enter '+'' for addition\n");
+	<p>printf("Enter '-'  for subtraction\n");
+	<p>printf("Enter '*'  for multiplication\n");
+	<p>printf("Enter '/'  for quotient\n");
+	<p>printf("Enter '%%' for remainder\n");
+	<p>printf("Enter any operator \n");
+	<p>scanf("%c",&ch);
+	<p>printf("Enter the value of any two operands such that (a>b)\n");
+	<p>scanf("%d%d",&a,&b);
+	<p>switch(ch)
+	<p>{
+	<p>	case '+':
+		<p>	printf("Addition of %d and %d is=%d",a,b,(a+b));
+			<p>break;
+			<p>case '-':
+			<p>	printf("Subtraction of %d and %d is=%d",a,b,(a-b));
+			<p>break;
+			<p>	case '*':
+			<p>	printf("Multiplication of %d and %d is=%d",a,b,(a*b));
+			<p>break;
+			<p>	case '/':
+			<p>	printf("Quotient  of %d and %d is=%d",a,b,(a/b));
+			<p>break;
+			<p>	case '%':
+			<p>	printf("Remainder of %d and %d is=%d",a,b,(a%b));
+			<p>break;	
+			<p>default:
+			<p>	printf("Wrong choice\n");
+	<p>}
+	<p>return 0;
+	<p>getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

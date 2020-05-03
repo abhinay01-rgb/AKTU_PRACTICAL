@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>prg32</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("31prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>31. WAP to check whether a given word exists in a file or not.If yes then find the number of times it occurs.</h3></b><hr>
+<b><h3>Remark :   Create file of name   " TEXT.txt "  in the folder where you run this code.</h3></b><hr>
+<h4><p>#include&ltconio.h>
+<h4><p>#include&ltstdio.h>
+<p>#define Buffer_Size 100
+<p>int main()
+<p>{
+<p>	FILE *fp;
+<p>	char st[Buffer_Size],s[50];int k=0;
+<p>	printf("Enter the word to be searched\n");
+<p>	scanf("%s",&s);
+<p>	fp=fopen("TEXT.txt","r");
+<p>	if(fp==NULL)
+	<p>{
+	<p>	printf("File not found\n");
+<p>	}
+<p>	while(fgets(st,40,fp)!=NULL)
+<p>	{ 
+	   
+<p>		printf("%s",st);
+		
+<p>		if(strcmp(st,s)==1)
+<p>		{
+<p>			k++;
+<p>		}
+		
+<p>}
+<p>	printf("\nThe number of times searched word present is=%d",k);
+<p>	fclose(fp);
+
+<p>}
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

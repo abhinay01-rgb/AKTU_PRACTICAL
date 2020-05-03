@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>prg22</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("22prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>22. WAP that inputs two arrays and saves sum of corresponding elements of these arrays in a third array and prints them.  </h3></b><hr>
+<h4><p>
+<p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int a[50],b[50],i,c[50],n;
+   <p> printf("How many numbers you want to enter\n");
+   <p> scanf("%d",&n);
+   <p> printf("Enter the elements of 1st array\n");
+   <p> for(i=0;i<(n);i++)
+   <p> scanf("%d",&a[i]);
+   <p> printf("Enter the elements of 2nd array\n");
+   <p> for(i=0;i<(n);i++)
+   <p> scanf("%d",&b[i]);
+    <p>for(i=0;i<(n);i++)
+   <p> {
+   <p> 	c[i]=a[i]+b[i];
+<p>	}
+ <p>   printf("The sum of array 1st and 2nd is=\n");
+  <p>  for(i=0;i<(n);i++)
+  <p>  printf("%d\n",c[i]);
+<p>return 0;
+<p>getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

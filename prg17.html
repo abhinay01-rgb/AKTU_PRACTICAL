@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>prg17</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("17prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>17. WAP to find the sum of digits of the entered number.</h3></b><hr>
+<h4>
+<p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int n,m,sum=0;
+<p>	printf("Enter number. \n");
+<p>	scanf("%d",&n);
+	<p>while(n!=0)
+	<p>{
+	<p>	m=n%10;
+		<p>sum=sum+m;
+		<p>n=n/10;
+<p>	}
+	<p>printf("Sum of digits of entered number  is =%d\n",sum);
+	<p>return 0;
+<p>	getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

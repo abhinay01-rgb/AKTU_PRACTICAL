@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>prg26</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("26prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>26. WAP to find the addition and multiplication of the two matrix.</h3></b><hr>
+<p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int  main()
+<p>{
+<p>	int a[3][3], b[3][3], c[3][3]={0}, d[3][3]={0};
+<p>	int i,j,k,m,n,p,q;
+<p>	printf("Enter no. of rows and columns in matrix A:\n ");
+<p>	scanf("%d%d",&m,&n);
+<p>	printf("Enter no. of rows and columns in matrix B:\n ");
+<p>	scanf("%d%d",&p,&q);
+<p>	if(m!=p || n!=q)
+<p>	{
+<p>		printf("Matrix Addition is not possible");
+<p>		return 0;<p>
+	}
+	<p>else if(n!=p)
+	<p>{
+	<p>	printf("Matrix Multiplication is not possible");
+	<p>	return 0;
+<p>	}
+<p>	else
+<p>	{
+	<p>	printf("Enter elements of matrix A:\n ");
+		<p>for(i=0;i&ltm;i++)
+			<p>for(j=0;j&ltn;j++)
+				<p>scanf("%d", &a[i][j]);
+	<p>	printf("Enter elements of matrix B:\n ");
+	<p>	for(i=0;i&ltp;i++)
+	<p>		for(j=0;j&ltq;j++)
+	<p>			scanf("%d", &b[i][j]);
+	
+	<p>	for(i=0;i&ltm;i++)
+	<p>		for(j=0;j&ltn;j++)
+	<p>			c[i][j] = a[i][j] + b[i][j];
+		<p>printf("\nResult of Matirx Addition:\n");
+	<p>	for(i=0;i&ltm;i++)
+	<p>	{
+		<p>	for(j=0;j&ltn;j++)
+			<p>	printf("%d ", c[i][j]);
+		<p>	printf("\n");
+	<p>	}
+
+	<p>	for(i=0;i&ltm;i++)
+		<p>	for(j=0;j&ltq;j++)
+			<p>	for(k=0;k&ltp;k++)
+				<p>	d[i][j] += a[i][k]*b[k][j];
+		<p>printf("\nResult of Matirx Multiplication:\n");
+		<p>for(i=0;i&ltm;i++)
+	<p>	{
+	<p>		for(j=0;j&ltq;j++)
+		<p>		printf("%d ", d[i][j]);
+		<p>	printf("\n");
+	<p>	}
+	<p>}
+	<p>return 0;
+	<p>getch();
+<p>}
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

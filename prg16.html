@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>prg16</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("16prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>16. WAP to check the given number is prime or not.</h3></b><hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int n,i,k=0;
+<p>	printf("Enter the number to which you want to check.\n");
+<p>	scanf("%d",&n);</p>
+<p>	for(i=2;i<n;i++)</p>
+<p>	{
+<p>if(n%i==0)
+<p>	k++;
+<p>	}
+	<p>	if(k>=1)
+<p>	printf("%d is not a Prime number\n",n);
+	<p>	else
+	<p>	printf("%d is a Prime number\n",n);			
+<p> return 0;
+  <p>  getch();
+  <p> }</p>
+  </h4>
+  <center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>prg1</title>
+</head>
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("1prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>1. WAP that accepts the marks of 5 subjects and finds the sum and percentage marks obtained by the student. </h3></b><hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()</p>
+<p>{</p>
+
+	<p>int a,b,c,d,e,sum=0;double per;</p>
+	<p>printf("Enter the marks of 5 subjects\n");</p>
+	<p>scanf("%d%d%d%d%d",&a,&b,&c,&d,&e);</p>
+	<p>sum=a+b+c+d+e;</p>
+	<p>per=sum/5;</p>
+	<p>printf("Sum of 5 Subjects is=%d\n",sum);</p>
+	<p>printf("Percentage  of 5 Subjects is=%lf\n",per);</p>
+	<p>return 0;</p>
+	<p>getch();</p>
+	
+}
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

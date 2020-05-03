@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>prg24</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("24prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>24. WAP to search the number from given array.</h3></b><hr>
+<h4><p>
+<p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+<p>	int a[50],i,n,s,k=0;
+<p>	printf("How many numbers you want to enter\n");
+<p>	scanf("%d",&n);
+<p>	printf("Enter the %d elements of the matrix\n",n);
+<p>	for(i=0;i<(n);i++)
+<p>	scanf("%d",&a[i]);
+<p>	printf("Enter the number to be searched\n");
+<p>	scanf("%d",&s);
+<p>	for(i=0;i<(n);i++)
+<p>	{
+<p>		if(a[i]==s)	
+<p>		k++;
+<p>	}
+<p>		if(k==1)
+<p>		printf("Number is present.\n");
+<p>		else
+<p>		printf("Number is not present.\n");
+<p>			return 0;
+<p>			getch();
+	<p>	}</p>
+	</h4>
+	<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>
+
+
+
+
+
+
+
+

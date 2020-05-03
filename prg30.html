@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>prg30</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("30prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>30. WAP to swap two number using concept of pointer.</h3></b><hr>
+<p>#include &ltstdio.h>
+<p>void swap(int *x,int *y)
+<p>{
+  <p>  int t;
+    <p> t   = *x;
+   <p> *x   = *y;
+   <p> *y   =  t;
+<p>}
+
+<p>int main()
+<p>{
+  <p>  int num1,num2;
+
+   <p> printf("Enter value of num1: ");
+   <p> scanf("%d",&num1);
+    <p>printf("Enter value of num2: ");
+    <p>scanf("%d",&num2);
+
+   
+   <p> printf("Before Swapping: num1 is: %d, num2 is: %d\n",num1,num2);
+
+  
+ <p>   swap(&num1,&num2);
+
+   
+<p>    printf("After  Swapping: num1 is: %d, num2 is: %d\n",num1,num2);
+
+   <p> return 0;
+<p>}
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

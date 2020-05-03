@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>prg20</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("20prg1.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>20. WAP to convert binary number into decimal number and vice versa.</h3></b><hr>
+<h4>
+<p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+ <p>   int x1;int n,m,i,a[10],k=0,j=0,x;long int b;int sum=0,p1=1,y=0;
+    <p>printf("Enter 1 for Decimal to Binary\n");
+<p>	printf("Enter 2 for Binary to Decimal\n");
+<p>	printf("Now, Enter your choice\n");
+<p>	scanf("%d",&x1);
+<p>	switch(x1)
+<p>	{
+<p>		case 1:
+				
+<p>	char ch[10];
+<p>	printf("Enter any number \n");
+<p>	scanf("%d",&n);
+<p>	if(n==0)
+<p>	{
+<p>	printf("The binary code is=%d\n",0);	
+<p>	}
+<p>	while(n!=0)
+<p>	{
+<p>		m=n%2;
+<p>		a[j]=m;
+<p>		n=n/2;
+<p>		k++;
+<p>		j++;
+<p>		}
+<p>		printf("The binary code is=");
+<p>		for(x=(k-1);x>=0;x--)
+<p>		printf("%d",a[x]);
+	<p>break;
+<p>				case 2:
+						
+<p>	printf("Enter any number\n");
+						
+	<p>		scanf("%d",&b);
+		<p>		printf("The number in decimal form is=");
+			<p>			while(b>0)
+				<p>		{
+					<p>	    m=b%10;
+						<p>    a[y]=m;
+						   <p> 	b=b/10;
+						<p>	k++;
+					<p>		y++;
+					<p>	}
+					<p>	for(i=0;i<=(k-1);i++)
+					<p>	{
+					<p>		p1=pow(2,i)*a[i];
+					<p>		sum=sum+p1;
+					<p>		}
+					<p>	printf("%d",sum);
+					<p>break;
+					<p>default:
+					<p>	printf("Wrong choice\n");
+				<p>	}
+				<p>	return 0;
+				<p>	getch();
+				<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

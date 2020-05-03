@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>prg18</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("18prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>18. WAP to find the reverse of a number.</h3></b><hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int n,m,sum=0;
+	<p>printf("Enter number. \n");
+	<p>scanf("%d",&n);
+<p>	printf("Number in original form is=%d\n",n);
+<p>	printf("Number in reversed form is=");
+<p>	while(n!=0)
+	<p>{
+	<p>	m=n%10;
+	<p>	printf("%d",m);
+		<p>n=n/10;
+	<p>}
+	<p>return 0;
+	<p>getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>
+

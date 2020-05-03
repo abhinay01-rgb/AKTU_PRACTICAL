@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>prg19</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("19prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+		
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>19. WAP to print Armstrong numbers from 1 to 100.</h3></b><hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+<p>	int n,m,sum=0,k;
+<p>	printf("Armstrong number between 1 to 100 are/is:\n");
+<p>	for(n=1;n<=100;n++)
+<p>	{
+<p>		k=0;
+<p>		k=n;
+<p>	while(n>0)
+<p>	{
+<p>		m=n%10;
+<p>		sum=sum+(m*m*m); 
+	<p>	n=n/10;
+<p>	if(sum==k)
+<p>	printf("%d",k);
+<p>}
+<p>}	
+<p>	return 0;
+<p>	getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

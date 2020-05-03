@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>prg28</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("28prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>28. WAP to implement strlen (), strcat (),strcpy () using the concept of Functions.</h3></b><hr>
+<h4><p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>char ch[100],str[100],ch1[100];int i,j,k;
+	<p>printf("Enter the string\n");
+<p>	scanf("%s",&ch);
+<p>	printf("Enter the another string to concatenate\n");
+<p>	scanf("%s",&str);
+<p>	i=strlen(ch);
+<p>	printf("Length of %s is =%d\n",ch,i);
+<p>printf("String copying from original is=%s\n",strcpy(ch1,ch));
+<p>	printf("String after concatenation is=%s\n",strcat(ch,str));
+<p>	return 0;
+<p>	getch();
+<p>}</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>

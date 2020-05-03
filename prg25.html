@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>prg25</title>
+
+<style>
+h3{
+color:black;
+}
+h4{
+line-height:1em;
+}
+body{
+border-top:40px solid grey;
+		border-bottom:40px solid grey;
+		border-radius:50px;
+		background-color:lightgrey;
+		background-image:url("25prg.png");
+		background-repeat:no-repeat;
+		background-position:right;
+	}
+	#box{
+	background-color:dodgerblue;
+	}
+</style>
+<body>
+<b><h3>25. WAP to sort the elements of the array in ascending order using Bubble Sort technique.</h3></b><hr>
+<h4>
+<p>#include&ltstdio.h>
+<p>#include&ltconio.h>
+<p>int main()
+<p>{
+	<p>int a[60],i,j,n,temp=0,o;
+	<p>printf("How many number  you want to enter\n");
+<p>	scanf("%d",&n);
+<p>	printf("Enter the %d elements of matrix\n",n);
+<p>	for(i=0;i<(n);i++)
+  <p>  {
+  <p>  	scanf("%d",&a[i]);
+<p>	}
+<p>	for(i=0;i<(n);i++)
+	<p>{
+<p>		for(j=(i+1);j<(n);j++)
+<p>		{
+	<p>		if(a[i]>=a[j])
+    <p>		{
+    	<p>		temp=a[i];
+    	<p>	a[i]=a[j];
+    <p>		a[j]=temp;
+	<p>		}
+	<p>	}
+<p>	}
+  <p> printf("Number in ascending order are\n");
+	<p>for(i=0;i<(n);i++)
+	<p>printf("%d ",a[i]);
+<p>getch();</p>
+</h4>
+<center><a href="A1.html"><button id="box">Home</button></a></center>
+</html>
